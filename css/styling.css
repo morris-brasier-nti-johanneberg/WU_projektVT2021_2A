@@ -8,7 +8,7 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-columns: 3fr 2fr 20%;
     grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-template-areas:
     "he he na"
@@ -18,8 +18,68 @@
     ;
 }
 
+.nyhetssida {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "he na"
+    "a1 a1"
+    "a2 a2"
+    "a3 a3"
+    "fo fo"
+    ;
+}
+
+.traningsprodukter {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "he he na"
+    "s1 s2 s2"
+    "fo fo fo"
+    ;
+}
+
+.traningsprogram {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "he he na"
+    "s1 s2 s2"
+    "fo fo fo"
+    ;
+}
+
+.personlig_traning {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr 20%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "he he na"
+    "s1 s2 s2"
+    "s3 s4 s4"
+    "s5 s6 s6"
+    "fo fo fo"
+    ;
+}
+
 header {
     grid-area: he;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
 }
 
 nav {
@@ -27,9 +87,10 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
-    background-color: lightpink;
+    background-color: rgb(49, 49, 49);
     font-family: sans-serif;
+    border: solid black 2px;
+    margin: 1px;
 }
 
 .navLinks {
@@ -40,7 +101,7 @@ nav {
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background-color: lightpink;
+    background-color: rgb(49, 49, 49);
     align-items: center;
     width: 20%;
     transition: all 1s;
@@ -48,6 +109,7 @@ nav {
 
 .navActive {
     transform: translateY(100vh);
+    border: solid black 2px;
 }
 
 .navLinks li {
@@ -90,16 +152,80 @@ nav {
 
 #article_1 {
     grid-area: a1;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#article_2 {
+    grid-area: a2;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#article_3 {
+    grid-area: a3;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
 }
 
 #section_1 { 
     grid-area: s1;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
 }
 
 #section_2 {
     grid-area: s2;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#section_3{
+    grid-area: s3;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#section_4{
+    grid-area: s4;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#section_5{
+    grid-area: s5;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+#section_6{
+    grid-area: s6;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
 }
 
 footer {
     grid-area: fo;
+    background-color: rgb(49, 49, 49);
+    color: orange;
+    border: solid black 2px;
+    margin: 1px;
 }
