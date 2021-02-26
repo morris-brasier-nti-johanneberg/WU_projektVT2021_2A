@@ -25,7 +25,7 @@ header {
 nav {
     grid-area: na;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 10vh;
     background-color: lightpink;
@@ -43,6 +43,11 @@ nav {
     background-color: lightpink;
     align-items: center;
     width: 20%;
+    transition: all 1s;
+}
+
+.navActive {
+    transform: translateY(100vh);
 }
 
 .navLinks li {
@@ -55,6 +60,32 @@ nav {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
+}
+
+.burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: orange;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.3s;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 #article_1 {
