@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.forsta_sida {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+    "he he na"
+    "a1 a1 a1"
+    "s1 s2 s2"
+    "fo fo fo"
+    ;
+}
+
+header {
+    grid-area: he;
+}
+
+nav {
+    grid-area: na;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: lightpink;
+    font-family: sans-serif;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: lightpink;
+    align-items: center;
+    width: 20%;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: orange;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#article_1 {
+    grid-area: a1;
+}
+
+#section_1 { 
+    grid-area: s1;
+}
+
+#section_2 {
+    grid-area: s2;
+}
+
+footer {
+    grid-area: fo;
+}
