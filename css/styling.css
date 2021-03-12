@@ -8,8 +8,8 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 3fr 2fr 20%;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 200px 150px 50px;
+    grid-template-rows: 50px 300px 300px 100px;
     grid-template-areas:
     "he he na"
     "a1 a1 a1"
@@ -22,8 +22,8 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 350px 50px;
+    grid-template-rows: 50px 300px 300px 300px 100px;
     grid-template-areas: 
     "he na"
     "a1 a1"
@@ -37,8 +37,8 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 200px 150px 50px;
+    grid-template-rows: 50px 600px 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -50,8 +50,8 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 200px 150px 50px;
+    grid-template-rows: 50px 600px 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -63,8 +63,8 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 3fr 2fr 20%;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 200px 150px 50px;
+    grid-template-rows: 50px 200px 200px 200px 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -76,10 +76,18 @@
 
 header {
     grid-area: he;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: rgb(49, 49, 49);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+}
+
+header h1 {
+    font-size: 20px;
+
 }
 
 nav {
@@ -98,17 +106,17 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: -90vh;
+    width: 50vw;
+    right: -50vw;
+    height: 80vh;
+    top: 50px;
     background-color: rgb(49, 49, 49);
     align-items: center;
-    width: 20%;
     transition: all 1s;
 }
 
 .navActive {
-    transform: translateY(100vh);
+    transform: translateX(-50vw);
     border: solid black 2px;
 }
 
@@ -117,15 +125,18 @@ nav {
 }
 
 .navLinks a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: orange;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .burger {
-    margin-right: 50px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
