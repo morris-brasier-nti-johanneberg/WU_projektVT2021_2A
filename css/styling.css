@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .forsta_sida {
     display: grid;
     width: 100vw;
@@ -125,9 +129,6 @@ nav {
 }
 
 .navLinks a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     color: orange;
     text-decoration: none;
     letter-spacing: 3px;
@@ -239,4 +240,83 @@ footer {
     color: orange;
     border: solid black 2px;
     margin: 1px;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .forsta_sida {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 300px 300px 100px;
+        grid-template-areas:
+        "he he"
+        "na na"
+        "a1 a1"
+        "s1 s2"
+        "fo fo"
+        ;
+    }
+
+    .nyhetssida {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 300px 300px 300px 100px;
+        grid-template-areas: 
+        "he"
+        "na"
+        "a1"
+        "a2"
+        "a3"
+        "fo"
+        ;
+    }
+
+    .traningsprodukter {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 600px 100px;
+        grid-template-areas: 
+        "he he"
+        "na na"
+        "s1 s2"
+        "fo fo"
+        ;
+    }
+
+    .traningsprogram {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 600px 100px;
+        grid-template-areas:
+        "he he"
+        "na na"
+        "s1 s2"
+        "fo fo"
+        ;
+    }
+
+    .personlig_traning {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 200px 200px 200px 100px;
+        grid-template-areas:
+        "he he"
+        "na na"
+        "s1 s2"
+        "s3 s4"
+        "s5 s6"
+        "fo fo"
+        ;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .navLinks{
+        width: 100vw;
+        height: 0vh;
+        transition: none;
+        flex-direction: row;
+        position: static;
+    }
+
+    .burger {
+        display: none;
+    }
 }
