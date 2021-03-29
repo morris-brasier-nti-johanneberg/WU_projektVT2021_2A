@@ -240,7 +240,20 @@ footer {
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.ul_foo{
+    list-style: none;
+    padding: 7px;
+}
+
+.ul_foo li {
+    font-size: 13px;
+}
+
 
 @media screen and (min-width: 1280px) {
 
