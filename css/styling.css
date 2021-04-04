@@ -13,7 +13,7 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 300px 300px 100px;
+    grid-template-rows: 50px 300px 400px 100px;
     grid-template-areas:
     "he he na"
     "a1 a1 a1"
@@ -42,7 +42,7 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 600px 100px;
+    grid-template-rows: 50px 650px 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -55,7 +55,7 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 600px 100px;
+    grid-template-rows: 50px 1500px 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -83,7 +83,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(32, 31, 31);;
     color: orange;
     border: solid black 2px;
     margin: 1px;
@@ -103,7 +103,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     font-family: sans-serif;
     border: solid black 2px;
     margin: 1px;
@@ -118,7 +118,7 @@ nav {
     right: -50vw;
     height: 80vh;
     top: 50px;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     align-items: center;
     transition: all 1s;
 }
@@ -164,7 +164,7 @@ nav {
 
 #article_1 {
     grid-area: a1;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
@@ -180,7 +180,7 @@ nav {
 
 #article_2 {
     grid-area: a2;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
@@ -195,7 +195,7 @@ nav {
 
 #article_3 {
     grid-area: a3;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
@@ -210,10 +210,13 @@ nav {
 
 #section_1 { 
     grid-area: s1;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_1 h2{
@@ -223,14 +226,23 @@ nav {
 #section_1 img {
     height: 100px;
     width: auto;
+    border: solid orange;
+}
+
+.forsta_sida #section_1{
+    display: flex;
+    justify-content: space-around;
 }
 
 #section_2 {
     grid-area: s2;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_2 h2{
@@ -240,14 +252,18 @@ nav {
 #section_2 img {
     height: 100px;
     width: auto;
+    border: solid orange;
 }
 
 #section_3 {
     grid-area: s3;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_3 h2{
@@ -257,14 +273,18 @@ nav {
 #section_3 img {
     height: 100px;
     width: auto;
+    border: solid orange;
 }
 
 #section_4 {
     grid-area: s4;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_4 h2{
@@ -274,14 +294,18 @@ nav {
 #section_4 img {
     height: 100px;
     width: auto;
+    border: solid orange;
 }
 
 #section_5 {
     grid-area: s5;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_5 h2{
@@ -291,14 +315,18 @@ nav {
 #section_5 img {
     height: 100px;
     width: auto;
+    border: solid orange;
 }
 
 #section_6 {
     grid-area: s6;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section_6 h2{
@@ -308,11 +336,12 @@ nav {
 #section_6 img {
     height: 100px;
     width: auto;
+    border: solid orange;
 }
 
 footer {
     grid-area: fo;
-    background-color: rgb(49, 49, 49);
+    background-color:  rgb(32, 31, 31);
     color: orange;
     border: solid black 2px;
     margin: 1px;
@@ -330,6 +359,10 @@ footer {
     font-size: 13px;
 }
 
+ol li {
+padding: 10px;
+}
+
 h2 {
     padding: 5px;
 }
@@ -342,11 +375,12 @@ p {
     padding: 5px;
 }
 
+
 @media screen and (min-width: 1280px) {
 
     .forsta_sida {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 300px 300px 100px;
+        grid-template-rows: 100px 100px 300px 450px 100px;
         grid-template-areas:
         "he he"
         "na na"
@@ -371,7 +405,7 @@ p {
 
     .traningsprodukter {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 600px 100px;
+        grid-template-rows: 100px 100px 650px 100px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -382,7 +416,7 @@ p {
 
     .traningsprogram {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 600px 100px;
+        grid-template-rows: 100px 100px 1500px 100px;
         grid-template-areas:
         "he he"
         "na na"
@@ -472,5 +506,4 @@ p {
         line-height: 50px;
         padding: 10px;
     }
-
 }
