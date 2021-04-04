@@ -125,7 +125,7 @@ nav {
 
 .navActive {
     transform: translateX(-50vw);
-    border: solid black 2px;
+    border: solid orange 2px;
 }
 
 .navLinks a {
