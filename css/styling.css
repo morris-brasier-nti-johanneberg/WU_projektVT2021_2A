@@ -27,7 +27,7 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 350px 50px;
-    grid-template-rows: 50px 300px 300px 300px 100px;
+    grid-template-rows: 50px 600px 600px 600px 100px;
     grid-template-areas: 
     "he na"
     "a1 a1"
@@ -89,9 +89,13 @@ header {
     margin: 1px;
 }
 
+header img {
+    height: 50px;
+    width: auto;
+}
+
 header h1 {
     font-size: 20px;
-
 }
 
 nav {
@@ -122,10 +126,6 @@ nav {
 .navActive {
     transform: translateX(-50vw);
     border: solid black 2px;
-}
-
-.navLinks li {
-    list-style: none;
 }
 
 .navLinks a {
@@ -170,12 +170,27 @@ nav {
     margin: 1px;
 }
 
+
+#article_1 img {
+    width: 200px;
+    height: auto;
+    float: right;
+    padding: 5px;
+}
+
 #article_2 {
     grid-area: a2;
     background-color: rgb(49, 49, 49);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+}
+
+#article_2 img {
+    width: 200px;
+    height: auto;
+    float: right;
+    padding: 5px;
 }
 
 #article_3 {
@@ -186,12 +201,28 @@ nav {
     margin: 1px;
 }
 
+#article_3 img {
+    width: 200px;
+    height: auto;
+    float: right;
+    padding: 5px;
+}
+
 #section_1 { 
     grid-area: s1;
     background-color: rgb(49, 49, 49);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+}
+
+#section_1 h2{
+    display: none;
+}
+
+#section_1 img {
+    height: 100px;
+    width: auto;
 }
 
 #section_2 {
@@ -202,7 +233,16 @@ nav {
     margin: 1px;
 }
 
-#section_3{
+#section_2 h2{
+    display: none;
+}
+
+#section_2 img {
+    height: 100px;
+    width: auto;
+}
+
+#section_3 {
     grid-area: s3;
     background-color: rgb(49, 49, 49);
     color: orange;
@@ -210,7 +250,16 @@ nav {
     margin: 1px;
 }
 
-#section_4{
+#section_3 h2{
+    display: none;
+}
+
+#section_3 img {
+    height: 100px;
+    width: auto;
+}
+
+#section_4 {
     grid-area: s4;
     background-color: rgb(49, 49, 49);
     color: orange;
@@ -218,7 +267,16 @@ nav {
     margin: 1px;
 }
 
-#section_5{
+#section_4 h2{
+    display: none;
+}
+
+#section_4 img {
+    height: 100px;
+    width: auto;
+}
+
+#section_5 {
     grid-area: s5;
     background-color: rgb(49, 49, 49);
     color: orange;
@@ -226,12 +284,30 @@ nav {
     margin: 1px;
 }
 
-#section_6{
+#section_5 h2{
+    display: none;
+}
+
+#section_5 img {
+    height: 100px;
+    width: auto;
+}
+
+#section_6 {
     grid-area: s6;
     background-color: rgb(49, 49, 49);
     color: orange;
     border: solid black 2px;
     margin: 1px;
+}
+
+#section_6 h2{
+    display: none;
+}
+
+#section_6 img {
+    height: 100px;
+    width: auto;
 }
 
 footer {
@@ -254,6 +330,17 @@ footer {
     font-size: 13px;
 }
 
+h2 {
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    padding: 5px;
+}
 
 @media screen and (min-width: 1280px) {
 
@@ -317,6 +404,15 @@ footer {
         ;
     }
 
+    header img {
+        height: 100px;
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
     nav {
         justify-content: center;
     }
@@ -332,4 +428,49 @@ footer {
     .burger {
         display: none;
     }
+
+    #article_1 img {
+        height: 250px;
+        width: auto;
+    }
+
+    #article_2 img {
+        height: 250px;
+        width: auto;
+    }
+
+    #article_3 img {
+        height: 250px;
+        width: auto;
+    }
+
+    #section_1 h2{
+        display: initial;
+    }
+
+    #section_2 h2{
+        display: initial;
+    }
+
+    #section_3 h2{
+        display: initial;
+    }
+
+    #section_4 h2{
+        display: initial;
+    }
+
+    #section_5 h2{
+        display: initial;
+    }
+
+    #section_6 h2{
+        display: initial;
+    }
+
+    p {
+        line-height: 50px;
+        padding: 10px;
+    }
+
 }
