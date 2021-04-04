@@ -13,7 +13,7 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 300px 500px 100px;
+    grid-template-rows: 50px 310px 500px 100px;
     grid-template-areas:
     "he he na"
     "a1 a1 a1"
