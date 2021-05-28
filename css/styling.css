@@ -12,7 +12,7 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 200px 150px 50px;
+    grid-template-columns: 1fr 1fr 50px;
     grid-template-rows: 50px 310px 500px 100px;
     grid-template-areas:
     "he he na"
@@ -394,7 +394,7 @@ p {
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 501px) {
 
     .forsta_sida {
         grid-template-columns: 1fr 1fr;
