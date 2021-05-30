@@ -55,12 +55,13 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 5fr 4fr 1fr;
-    grid-template-rows: 50px auto 100px;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 50px auto auto 100px;
     grid-template-areas: 
-    "he he na"
-    "s1 s2 s2"
-    "fo fo fo"
+    "he na"
+    "s1 s1"
+    "s2 s2"
+    "fo fo"
     ;
 }
 
