@@ -12,8 +12,9 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 50px;
-    grid-template-rows: 50px 310px 500px 100px;
+    overflow-x: hidden;
+    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-rows: 50px auto auto 100px;
     grid-template-areas:
     "he he na"
     "a1 a1 a1"
@@ -26,8 +27,8 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 350px 50px;
-    grid-template-rows: 50px 350px 350px 350px 100px;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 50px auto auto auto 100px;
     grid-template-areas: 
     "he na"
     "a1 a1"
@@ -41,8 +42,8 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 750px 100px;
+    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-rows: 50px auto 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -54,8 +55,8 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 1500px 100px;
+    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-rows: 50px auto 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -67,8 +68,8 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 200px 150px 50px;
-    grid-template-rows: 50px 200px 200px 200px 100px;
+    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-rows: 50px auto auto auto 100px;
     grid-template-areas: 
     "he he na"
     "s1 s2 s2"
@@ -87,11 +88,13 @@ header {
     color: black;
     border: solid orange 2px;
     margin: 1px;
+    justify-content: space-around;
 }
 
 header img {
     height: 50px;
     width: auto;
+    border: hidden;
 }
 
 header h1 {
@@ -175,7 +178,7 @@ nav {
     width: 200px;
     height: auto;
     float: right;
-    padding: 5px;
+    margin: 5px;
 }
 
 #article_2 {
@@ -190,7 +193,7 @@ nav {
     width: 200px;
     height: auto;
     float: right;
-    padding: 5px;
+    margin: 5px;
 }
 
 #article_3 {
@@ -205,7 +208,7 @@ nav {
     width: 200px;
     height: auto;
     float: right;
-    padding: 5px;
+    margin: 5px;
 }
 
 #section_1 { 
@@ -219,14 +222,9 @@ nav {
     flex-direction: column;
 }
 
-#section_1 h2{
-    display: none;
-}
-
 #section_1 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 .forsta_sida #section_1{
@@ -251,14 +249,9 @@ nav {
     flex-direction: column;
 }
 
-#section_2 h2{
-    display: none;
-}
-
 #section_2 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 .forsta_sida #section_2 ul li {
@@ -284,14 +277,9 @@ nav {
     flex-direction: column;
 }
 
-#section_3 h2{
-    display: none;
-}
-
 #section_3 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 #section_4 {
@@ -305,14 +293,9 @@ nav {
     flex-direction: column;
 }
 
-#section_4 h2{
-    display: none;
-}
-
 #section_4 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 #section_5 {
@@ -326,14 +309,9 @@ nav {
     flex-direction: column;
 }
 
-#section_5 h2{
-    display: none;
-}
-
 #section_5 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 #section_6 {
@@ -347,14 +325,9 @@ nav {
     flex-direction: column;
 }
 
-#section_6 h2{
-    display: none;
-}
-
 #section_6 img {
     height: 100px;
     width: auto;
-    border: solid orange;
 }
 
 footer {
@@ -393,12 +366,16 @@ p {
     padding: 5px;
 }
 
+img {
+        border: solid orange;
+}
+
 
 @media screen and (min-width: 501px) {
 
     .forsta_sida {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 300px 300px 100px;
+        grid-template-rows: 100px 100px auto auto 100px;
         grid-template-areas:
         "he he"
         "na na"
@@ -410,7 +387,7 @@ p {
 
     .nyhetssida {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 300px 300px 300px 100px;
+        grid-template-rows: 100px 100px auto auto auto 100px;
         grid-template-areas: 
         "he"
         "na"
@@ -423,7 +400,7 @@ p {
 
     .traningsprodukter {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 800px 100px;
+        grid-template-rows: 100px 100px auto 100px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -434,7 +411,7 @@ p {
 
     .traningsprogram {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 1500px 100px;
+        grid-template-rows: 100px 100px auto 100px;
         grid-template-areas:
         "he he"
         "na na"
@@ -445,7 +422,7 @@ p {
 
     .personlig_traning {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 200px 200px 200px 100px;
+        grid-template-rows: 100px 100px auto auto auto 100px;
         grid-template-areas:
         "he he"
         "na na"
@@ -484,16 +461,19 @@ p {
     #article_1 img {
         height: 250px;
         width: auto;
+        margin: 10px;
     }
 
     #article_2 img {
         height: 250px;
         width: auto;
+        margin: 10px;
     }
 
     #article_3 img {
         height: 250px;
         width: auto;
+        margin: 10px;
     }
 
     .traningsprodukter #section_1 {
@@ -528,30 +508,6 @@ p {
     .forsta_sida #section_2 img {
         height: 150px;
         width: auto;
-    }
-
-    #section_1 h2{
-        display: initial;
-    }
-
-    #section_2 h2{
-        display: initial;
-    }
-
-    #section_3 h2{
-        display: initial;
-    }
-
-    #section_4 h2{
-        display: initial;
-    }
-
-    #section_5 h2{
-        display: initial;
-    }
-
-    #section_6 h2{
-        display: initial;
     }
 
     p {
